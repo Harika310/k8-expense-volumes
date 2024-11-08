@@ -30,6 +30,7 @@ spec:
     port: 3306 # service port
     targetPort: 3306
 ---
+# stateful set used for DB related aplications
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
@@ -65,4 +66,4 @@ spec:
       storageClassName: "expense-ebs"
       resources:
         requests:
-          storage: 1Gi   
+          storage: 1Gi
