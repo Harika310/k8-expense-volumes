@@ -43,7 +43,7 @@ spec:
       component: mysql
       tier: db
   serviceName: "mysql-headless" # this is the headless service should be mentioned for statefulset
-  replicas: 2 # 
+  replicas: 2 
   template:
     metadata:
       labels:
